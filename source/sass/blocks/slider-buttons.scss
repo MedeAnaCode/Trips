@@ -1,0 +1,57 @@
+.slider-buttons {
+  display: flex;
+  gap: 4px;
+}
+
+.slider-buttons__button {
+  background-color: $color-navy-blue;
+  width: 37px;
+  height: 35px;
+  padding: 17px 12px;
+  display: block;
+  cursor: pointer;
+  position: relative;
+
+  svg {
+    color: $color-default-white;
+    position: absolute;
+    margin: auto;
+    inset: 0;
+  }
+
+  &--next {
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    border: 1px solid $color-resolution-blue;
+    background-color: transparent;
+
+    svg {
+      color: $color-resolution-blue;
+    }
+  }
+
+  &:active {
+    background-color: $color-resolution-blue;
+    border: none;
+
+    svg {
+      color: $color-default-white;
+    }
+  }
+
+  &--disabled {
+    background-color: $color-navy-blue;
+    border: none;
+    opacity: 0.1;
+
+    svg {
+      color: $color-default-white;
+    }
+  }
+}
