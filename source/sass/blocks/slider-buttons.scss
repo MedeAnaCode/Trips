@@ -30,6 +30,8 @@
   &:focus-visible {
     border: 1px solid $color-resolution-blue;
     background-color: transparent;
+    outline-offset: 1px;
+    padding: 16px 11px;
 
     svg {
       color: $color-resolution-blue;
@@ -39,6 +41,8 @@
   &:active {
     background-color: $color-resolution-blue;
     border: none;
+    padding: 17px 12px;
+    outline-offset: 0;
 
     svg {
       color: $color-default-white;

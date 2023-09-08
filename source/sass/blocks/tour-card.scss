@@ -1,0 +1,243 @@
+.tour-card {
+  position: relative;
+  min-height: 412px;
+  max-height: 100%;
+  height: auto;
+  color: $color-default-white;
+  background-color: $color-navy-blue;
+
+  picture {
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    min-width: 100%;
+    width: auto;
+    height: 100%;
+    min-height: 412px;
+  }
+
+  img {
+    min-width: 100%;
+    width: auto;
+    object-fit: cover;
+    height: 100%;
+    min-height: 412px;
+  }
+
+  h3 {
+    display: block;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    width: 70%;
+    margin-bottom: 38px;
+    position: relative;
+    word-break: break-word;
+
+    @include vp-1199 {
+      width: 90%;
+    }
+
+    @include vp-767 {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 29px;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 1px;
+      background-color: rgba($color-default-white, 0.2);
+      position: absolute;
+      left: 0;
+      bottom: -17px;
+    }
+  }
+}
+
+.tour-card__text-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 22.3%, rgba(0, 0, 0, 0.00) 60.32%);
+  padding: 27px 20px;
+}
+
+.tour-card__info {
+  display: flex;
+  gap: 37px;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  margin-bottom: 23px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include vp-1199 {
+    justify-content: flex-start;
+    gap: 17px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 14px;
+  }
+}
+
+.tour-card__location {
+  padding: 9px 21px;
+  min-width: 108px;
+  background-color: $color-navy-blue;
+
+  @include vp-1199 {
+    padding: 9px 16px;
+    min-width: 95px;
+  }
+
+  @include vp-767 {
+    order: 1;
+  }
+
+  span {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    &::before {
+      content: url("../img/svg/pin.svg");
+      width: 9px;
+      height: 12px;
+    }
+  }
+}
+
+.tour-card__duration {
+  display: flex;
+  gap: 37px;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @include vp-1199 {
+    gap: 14px;
+  }
+
+  @include vp-767 {
+    gap: 22px;
+  }
+}
+
+.tour-card__days {
+  min-width: 75px;
+  max-width: 82px;
+
+  @include vp-1199 {
+    min-width: 73px;
+    max-width: 76px;
+  }
+
+  @include vp-767 {
+    min-width: 69px;
+    max-width: 76px;
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    width: 100%;
+    word-break: break-word;
+
+    &::before {
+      content: url("../img/svg/sun.svg");
+      width: 20px;
+      height: 20px;
+      margin-right: auto;
+    }
+  }
+}
+
+.tour-card__nights {
+  min-width: 81px;
+  max-width: 83px;
+
+  @include vp-1199 {
+    min-width: 78px;
+    max-width: 82px;
+  }
+
+  @include vp-767 {
+    min-width: 76px;
+    max-width: 82px;
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 8px;
+    word-break: break-word;
+
+    &::before {
+      content: url("../img/svg/moon-night.svg");
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.tour-card__orginfo {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding-right: 5px;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  @include vp-1199 {
+    padding-right: 0;
+  }
+}
+
+.tour-card__property-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  dt {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 12px;
+    word-break: break-word;
+  }
+
+  dd {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 13px;
+    display: flex;
+    gap: 1px;
+    word-break: break-word;
+
+    @include vp-767 {
+      font-size: 12px;
+      line-height: 12px;
+
+      svg {
+        width: 13px;
+        height: 13px;
+      }
+    }
+  }
+}

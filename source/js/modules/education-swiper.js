@@ -2,9 +2,9 @@ function initEducationSwiper() {
   let swiper3 = new Swiper('.education__slider', {
     loop: false,
     navigation: {
-      prevEl: '.education__button--prev',
-      nextEl: '.education__button--next',
-      // disabledClass: '';
+      prevEl: '.education__button-prev',
+      nextEl: '.education__button-next',
+      disabledClass: 'slider-buttons__button--disabled',
     },
     mousewheel: false,
     keyboard: true,
@@ -12,6 +12,7 @@ function initEducationSwiper() {
     breakpoints: {
       320: {
         slidesPerView: 1,
+        spaceBetween: 30,
       },
       768: {
         slidesPerView: 3,
