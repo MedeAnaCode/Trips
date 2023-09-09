@@ -9,7 +9,7 @@
   padding-bottom: 20px;
 
   @include vp-1199 {
-    padding-top: 69px;
+    padding-top: 74px;
   }
 
   @include vp-767 {
@@ -62,14 +62,15 @@
 }
 
 .tours__buttons {
-  padding-top: 20px;
+  align-self: flex-end;
 
   @include vp-1199 {
-    padding-top: 15px;
+    padding-top: 10px;
   }
 
   @include vp-767 {
-    padding-top: 4px;
+    padding-top: 0;
+    margin-bottom: 7px;
   }
 }
 

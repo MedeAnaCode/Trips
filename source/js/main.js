@@ -4,6 +4,9 @@ import {Form} from './modules/form-validate/form.js';
 import {initHeroSwiper} from './modules/hero-swiper.js';
 import {initToursSwiper} from './modules/tours-swiper.js';
 import {initEducationSwiper} from './modules/education-swiper.js';
+import {initFeedbacksSwiper} from './modules/feedbacks-swiper.js';
+import {initAdvantagesSwiper, initWindowResize} from './modules/advantages-swiper.js';
+import {initGallerySwiper} from './modules/gallery-swiper.js';
 import {initMenu} from './modules/menu.js';
 import {playVideo} from './modules/video-play.js';
 import {playAudio} from './modules/audio-play.js';
@@ -25,6 +28,10 @@ window.addEventListener('DOMContentLoaded', () => {
   initHeroSwiper();
   initToursSwiper();
   initEducationSwiper();
+  initFeedbacksSwiper();
+  initAdvantagesSwiper();
+  initWindowResize();
+  initGallerySwiper();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

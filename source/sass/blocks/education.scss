@@ -13,6 +13,7 @@
     font-size: 21px;
     font-weight: 700;
     line-height: 21px;
+    word-break: break-word;
 
     @include vp-1199 {
       font-size: 18px;
@@ -132,7 +133,7 @@
 }
 
 .education__buttons {
-
+  align-self: flex-end;
 }
 
 .education__slider-wrapper {
@@ -220,7 +221,7 @@
       }
     }
 
-    > :nth-child(4n - 2) {
+    li:nth-child(4n - 2) {
       position: relative;
       grid-column: 2 / 3;
 
@@ -237,7 +238,7 @@
       }
     }
 
-    > :nth-child(4n - 1) {
+    li:nth-child(4n - 1) {
       position: relative;
       grid-column: 2 / 3;
 
@@ -266,7 +267,7 @@
       }
     }
 
-    :nth-child(4n) {
+    li:nth-child(4n) {
       position: relative;
       grid-column: 1 / 2;
 
@@ -302,7 +303,7 @@
       display: none;
     }
 
-    > :nth-child(n) {
+    li:nth-child(n) {
       position: relative;
       padding-left: 27px;
       align-items: center;
@@ -334,14 +335,14 @@
       }
     }
 
-    > :first-child {
+    li:first-child {
       &::after {
         height: 50%;
         top: 50%;
       }
     }
 
-    > :last-child {
+    li:last-child {
       &::after {
         height: 50%;
         bottom: 50%;
@@ -357,10 +358,10 @@
   gap: 15px;
   align-items: center;
   margin: auto 0;
+  height: 100%;
 
   @include vp-1199 {
     padding: 21px 100px 16px 0;
-    height: 100%;
     align-items: flex-start;
   }
 

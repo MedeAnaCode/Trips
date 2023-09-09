@@ -1,0 +1,134 @@
+.feedback-card {
+  margin: 0;
+  padding: 20px 40px 20px 20px;
+  background-color: $color-default-white;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+
+  @include vp-767 {
+    padding: 20px 30px 20px 20px;
+  }
+
+  @include vp-767 {
+    padding: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0;
+  }
+}
+
+.feedback-card__avatar {
+  flex-basis: content;
+  min-width: 258px;
+  min-height: 253px;
+
+  @include vp-1199 {
+    min-width: 186px;
+    min-height: 237px;
+    flex-shrink: 1;
+  }
+
+  @include vp-767 {
+    min-width: auto;
+    min-height: 169px;
+    flex-shrink: 0;
+    width: 100%;
+    margin-bottom: 14px;
+  }
+
+  picture {
+    height: 100%;
+    object-fit: cover;
+
+    @include vp-767 {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  img {
+    height: 100%;
+    object-fit: cover;
+
+    @include vp-767 {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}
+
+.feedback-card__text {
+  margin: 0;
+  padding: 15px 0 14px;
+  display: flex;
+  flex-direction: column;
+
+  @include vp-1199 {
+    padding: 5px 0 1px;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 10px;
+    word-break: break-word;
+
+    @include vp-1199 {
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    @include vp-767 {
+
+    }
+  }
+}
+
+.feedback-card__feedback {
+  margin: 0;
+
+  @include vp-767 {
+    margin-bottom: 5px;
+  }
+}
+
+.feedback-card__author {
+  margin-top: auto;
+
+  @include vp-767 {
+    margin-top: auto;
+  }
+
+  cite {
+    margin: 0;
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 13px;
+    font-style: normal;
+    margin-bottom: 8px;
+    word-break: break-word;
+
+    @include vp-1199 {
+      font-size: 12px;
+      line-height: 15px;
+      margin-bottom: 9px;
+    }
+
+    @include vp-767 {
+      line-height: 12px;
+    }
+  }
+
+  small {
+    margin: 0;
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 12px;
+    word-break: break-word;
+  }
+}

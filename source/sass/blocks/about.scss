@@ -1,0 +1,117 @@
+.about {
+  padding: 87px 0 77px;
+  position: relative;
+  width: 100%;
+
+  @include vp-1199 {
+    padding: 38px 0 46px;
+  }
+
+  @include vp-767 {
+    padding: 427px 0 18px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 808px;
+    height: 474px;
+    background-image: url("../img/about-desktop-1x.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    z-index: -1;
+
+    @include retina {
+      background-image: url("../img/about-desktop-2x.jpg");
+    }
+
+    @include vp-1199 {
+      background-image: url("../img/about-tablet-1x.jpg");
+      width: 600px;
+      height: 403px;
+      top: 60px;
+
+      @include retina {
+        background-image: url("../img/about-tablet-2x.jpg");
+      }
+    }
+
+    @include vp-767 {
+      background-image: url("../img/about-mobile-1x.jpg");
+      top: -16px;
+      width: 320px;
+      height: 400px;
+
+      @include retina {
+        background-image: url("../img/about-mobile-2x.jpg");
+      }
+    }
+  }
+
+  h3 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 21px;
+    margin: 0;
+    margin-bottom: 17px;
+    word-break: break-word;
+
+    @include vp-1199 {
+      font-size: 18px;
+      line-height: 18px;
+      margin-bottom: 14px;
+    }
+
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 16px;
+      margin-bottom: 18px;
+    }
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 26px;
+    word-break: break-word;
+
+    @include vp-1199 {
+      margin-bottom: 29px;
+    }
+
+    @include vp-767 {
+      line-height: 20px;
+      margin-bottom: 42px;
+    }
+  }
+}
+
+.about__container {
+  padding-left: 735px;
+
+  @include vp-1199 {
+    padding-left: 399px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
+
+  @media(min-width: 3000px) {
+    padding: 0 120px;
+  }
+}
+
+.about__title {
+  margin-bottom: 58px;
+
+  @include vp-1199 {
+    margin-bottom: 36px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 32px;
+  }
+}
