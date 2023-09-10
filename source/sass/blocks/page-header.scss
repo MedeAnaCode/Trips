@@ -152,10 +152,12 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 21px;
 
   @include vp-1199 {
     flex-direction: column;
+    justify-content: flex-start;
     flex-wrap: nowrap;
     gap: 26px;
     margin-left: -5px;
