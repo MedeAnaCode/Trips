@@ -10,7 +10,7 @@ import {initGallerySwiper} from './modules/gallery-swiper.js';
 import {initMenu} from './modules/menu.js';
 import {playVideo} from './modules/video-play.js';
 import {playAudio} from './modules/audio-play.js';
-import {initMap} from "./modules/map.js";
+import {initMap, setWindowResize} from "./modules/map.js";
 
 // ---------------------------------
 
@@ -34,6 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initWindowResize();
   initGallerySwiper();
   initMap();
+  setWindowResize();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

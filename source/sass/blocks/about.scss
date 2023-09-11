@@ -51,6 +51,27 @@
     }
   }
 
+  &::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 618px;
+    height: 280px;
+    right: 0;
+    top: -90px;
+    z-index: -1;
+    background-image: url("../img/clouds/clouds-3-1x.png");
+
+    @include retina {
+      background-image: url("../img/clouds/clouds-3-2x.png");
+    }
+
+    @include vp-1199 {
+      display: none;
+    }
+  }
+
   h3 {
     font-size: 21px;
     font-weight: 700;

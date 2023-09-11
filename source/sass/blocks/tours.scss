@@ -1,5 +1,66 @@
 .tours {
   width: 100%;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 418px;
+    height: 279px;
+    left: 0;
+    bottom: -69;
+    z-index: -1;
+    background-image: url("../img/clouds/clouds-2-1x.png");
+
+    @include retina {
+      background-image: url("../img/clouds/clouds-2-2x.png");
+    }
+
+    @include vp-1199 {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 602px;
+    height: 1364px;
+    right: 0;
+    top: -19px;
+    z-index: -1;
+    background-image: url("../img/clouds/clouds-1-desktop-1x.png");
+
+    @include retina {
+      background-image: url("../img/clouds/clouds-1-desktop-2x.png");
+    }
+
+    @include vp-1199 {
+      top: -93px;
+      width: 294px;
+      height: 1364px;
+      background-image: url("../img/clouds/clouds-1-tablet-1x.png");
+
+      @include retina {
+        background-image: url("../img/clouds/clouds-1-tablet-2x.png");
+      }
+    }
+
+    @include vp-767 {
+      top: 137px;
+      width: 176px;
+      height: 595px;
+      background-image: url("../img/clouds/clouds-1-mobile-1x.png");
+
+      @include retina {
+        background-image: url("../img/clouds/clouds-1-mobile-2x.png");
+      }
+    }
+  }
 }
 
 .tours__container {

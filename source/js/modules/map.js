@@ -1,36 +1,61 @@
+const MAP_OPTIONS = {
+  center: [17.385044, 78.486671],
+  zoom: 15,
+  scrollWheelZoom: false,
+}
+
+const LAYER = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 19,
+});
+
+const ICON_OPTIONS = {
+  desktop: {
+    iconUrl: 'img/svg/pin-filled.svg',
+    iconSize: [48, 48],
+  },
+
+  tablet: {
+    iconUrl: 'img/svg/pin-filled.svg',
+    iconSize: [42, 42],
+  },
+
+  mobile: {
+    iconUrl: 'img/svg/pin-filled.svg',
+    iconSize: [28, 28],
+  },
+}
+
+let map;
+
 const initMap = () => {
-  let map = L.map('map', {
-    scrollWheelZoom: false,
-  }).setView([55.77846415126314, 37.62326846570395], 14);
-
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>'
-  }).addTo(map);
-
-  let pinSize = 48;
-
-  function resizePin() {
+  let pinOptions;
     if (window.innerWidth <= 1200) {
       if (window.innerWidth <= 768) {
-        pinSize = 28;
+        pinOptions = ICON_OPTIONS.mobile;
       } else {
-        pinSize = 42;
+        pinOptions = ICON_OPTIONS.tablet;
       }
+    } else {
+      pinOptions = ICON_OPTIONS.desktop;
     }
 
-    let pin = L.icon({
-      iconUrl: 'img/svg/pin-filled.svg',
-      iconSize: [pinSize, pinSize],
-      className: 'contacts__map-icon',
-    });
+  map = new L.map('map', MAP_OPTIONS);
+  map.setView([55.77846415126314, 37.62326846570395], 14);
+  LAYER.addTo(map);
 
-    L.marker([55.77498793606838, 37.632662957672096], {icon: pin}).addTo(map);
-  }
-
-  resizePin();
-  window.addEventListener('resize', () => resizePin());
+  let pin = L.icon(pinOptions);
+  let marker = new L.Marker([55.77498793606838, 37.632662957672096], {icon: pin});
+  marker.addTo(map);
 };
 
-export {initMap};
 
+const onWindowResize = () => {
+  map.remove();
+  initMap();
+};
+
+const setWindowResize = () => {
+  window.addEventListener('resize', onWindowResize);
+};
+
+export {initMap, setWindowResize};

@@ -25,10 +25,10 @@ const initAdvantagesSwiper = () => {
 };
 
 const destroySwiper = () => {
-  if (window.innerWidth <= 1199 && swiper5) {
+  if (window.innerWidth <= 1199 && swiper5 && swiper5.initialized) {
     swiper5.destroy();
     document.querySelector('.advantages__slider').style.display = 'block';
-  } else if (!swiper5.initialized) {
+  } else if (!swiper5) {
     initAdvantagesSwiper();
   }
 };
