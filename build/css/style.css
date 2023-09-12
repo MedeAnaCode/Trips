@@ -3654,6 +3654,8 @@ button,
   margin: 0;
   margin-bottom: 150px;
   max-width: 64%;
+  position: relative;
+  z-index: 2;
 }
 @media (max-width: 1199px) {
   .hero-block__button {
@@ -3693,6 +3695,7 @@ button,
   width: 482px;
   height: 317px;
   margin-top: 118px;
+  z-index: 2;
 }
 @media (max-width: 1199px) {
   .hero-block__video-wrapper {
@@ -3779,6 +3782,8 @@ button,
   margin-top: 118px;
   width: 340px;
   height: 220px;
+  position: relative;
+  z-index: 2;
 }
 @media (max-width: 1199px) {
   .hero-block__audio-player {

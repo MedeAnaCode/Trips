@@ -304,6 +304,8 @@
   margin: 0;
   margin-bottom: 150px;
   max-width: 64%;
+  position: relative;
+  z-index: 2;
 
   @include vp-1199 {
     margin-bottom: 50px;
@@ -338,6 +340,7 @@
   width: 482px;
   height: 317px;
   margin-top: 118px;
+  z-index: 2;
 
   @include vp-1199 {
     margin-top: 0;
@@ -435,6 +438,8 @@
   margin-top: 118px;
   width: 340px;
   height: 220px;
+  position: relative;
+  z-index: 2;
 
   @include vp-1199 {
     margin-top: 19px;
