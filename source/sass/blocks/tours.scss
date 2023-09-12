@@ -12,10 +12,14 @@
     left: 0;
     bottom: -69;
     z-index: -1;
-    background-image: url("../img/clouds/clouds-2-1x.png");
+    background-image: image-set(
+      url("../img/clouds/clouds-2-1x.webp") type("image/webp"),
+      url("../img/clouds/clouds-2-1x.png") type("image/png"));
 
     @include retina {
-      background-image: url("../img/clouds/clouds-2-2x.png");
+      background-image: image-set(
+        url("../img/clouds/clouds-2-2x.webp") type("image/webp"),
+        url("../img/clouds/clouds-2-2x.png") type("image/png"));
     }
 
     @include vp-1199 {
@@ -33,20 +37,28 @@
     right: 0;
     top: -19px;
     z-index: -1;
-    background-image: url("../img/clouds/clouds-1-desktop-1x.png");
+    background-image: image-set(
+      url("../img/clouds/clouds-1-desktop-1x.webp") type("image/webp"),
+      url("../img/clouds/clouds-1-desktop-1x.png") type("image/png"));
 
     @include retina {
-      background-image: url("../img/clouds/clouds-1-desktop-2x.png");
+      background-image: image-set(
+        url("../img/clouds/clouds-1-desktop-2x.webp") type("image/webp"),
+        url("../img/clouds/clouds-1-desktop-2x.png") type("image/png"));
     }
 
     @include vp-1199 {
       top: -93px;
       width: 294px;
       height: 1364px;
-      background-image: url("../img/clouds/clouds-1-tablet-1x.png");
+      background-image: image-set(
+          url("../img/clouds/clouds-1-tablet-1x.webp") type("image/webp"),
+          url("../img/clouds/clouds-1-tablet-1x.png") type("image/png"));
 
       @include retina {
-        background-image: url("../img/clouds/clouds-1-tablet-2x.png");
+        background-image: image-set(
+            url("../img/clouds/clouds-1-tablet-2x.webp") type("image/webp"),
+            url("../img/clouds/clouds-1-tablet-2x.png") type("image/png"));
       }
     }
 
@@ -54,10 +66,14 @@
       top: 137px;
       width: 176px;
       height: 595px;
-      background-image: url("../img/clouds/clouds-1-mobile-1x.png");
+      background-image: image-set(
+          url("../img/clouds/clouds-1-mobile-1x.webp") type("image/webp"),
+          url("../img/clouds/clouds-1-mobile-1x.png") type("image/png"));
 
       @include retina {
-        background-image: url("../img/clouds/clouds-1-mobile-2x.png");
+        background-image: image-set(
+            url("../img/clouds/clouds-1-mobile-2x.webp") type("image/webp"),
+            url("../img/clouds/clouds-1-mobile-2x.png") type("image/png"));
       }
     }
   }

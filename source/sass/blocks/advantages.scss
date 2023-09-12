@@ -20,10 +20,14 @@
     left: 0;
     top: -170px;
     z-index: -1;
-    background-image: url("../img/clouds/clouds-5-1x.png");
+    background-image: image-set(
+      url("../img/clouds/clouds-5-1x.webp") type("image/webp"),
+      url("../img/clouds/clouds-5-1x.png") type("image/png"));
 
     @include retina {
-      background-image: url("../img/clouds/clouds-5-2x.png");
+      background-image: image-set(
+        url("../img/clouds/clouds-5-2x.webp") type("image/webp"),
+        url("../img/clouds/clouds-5-2x.png") type("image/png"));
     }
 
     @include vp-1199 {
@@ -41,10 +45,14 @@
     right: 0;
     top: 10px;
     z-index: -1;
-    background-image: url("../img/clouds/clouds-4-1x.png");
+    background-image: image-set(
+      url("../img/clouds/clouds-4-1x.webp") type("image/webp"),
+      url("../img/clouds/clouds-4-1x.png") type("image/png"));
 
     @include retina {
-      background-image: url("../img/clouds/clouds-4-2x.png");
+      background-image: image-set(
+        url("../img/clouds/clouds-4-2x.webp") type("image/webp"),
+        url("../img/clouds/clouds-4-2x.png") type("image/png"));
     }
 
     @include vp-1199 {

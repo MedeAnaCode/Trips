@@ -23,13 +23,13 @@
     left: 0;
     z-index: -1;
     background-image: image-set(
-        url("../img/about-desktop-1x.webp") type("image/webp"),
-        url("../img/about-desktop-1x.jpg") type("image/jpg"));
+      url("../img/about-desktop-1x.webp") type("image/webp"),
+      url("../img/about-desktop-1x.jpg") type("image/jpg"));
 
     @include retina {
       background-image: image-set(
-          url("../img/about-desktop-2x.webp") type("image/webp"),
-          url("../img/about-desktop-2x.jpg") type("image/jpg"));
+        url("../img/about-desktop-2x.webp") type("image/webp"),
+        url("../img/about-desktop-2x.jpg") type("image/jpg"));
     }
 
     @include vp-1199 {
@@ -37,13 +37,13 @@
       height: 402px;
       top: 60px;
       background-image: image-set(
-          url("../img/about-tablet-1x.webp") type("image/webp"),
-          url("../img/about-tablet-1x.jpg") type("image/jpg"));
+        url("../img/about-tablet-1x.webp") type("image/webp"),
+        url("../img/about-tablet-1x.jpg") type("image/jpg"));
 
       @include retina {
         background-image: image-set(
-            url("../img/about-tablet-2x.webp") type("image/webp"),
-            url("../img/about-tablet-2x.jpg") type("image/jpg"));
+          url("../img/about-tablet-2x.webp") type("image/webp"),
+          url("../img/about-tablet-2x.jpg") type("image/jpg"));
       }
     }
 
@@ -52,14 +52,39 @@
       height: 402px;
       top: -16px;
       background-image: image-set(
-          url("../img/about-mobile-1x.webp") type("image/webp"),
-          url("../img/about-mobile-1x.jpg") type("image/jpg"));
+        url("../img/about-mobile-1x.webp") type("image/webp"),
+        url("../img/about-mobile-1x.jpg") type("image/jpg"));
 
       @include retina {
         background-image: image-set(
-            url("../img/about-mobile-2x.webp") type("image/webp"),
-            url("../img/about-mobile-2x.jpg") type("image/jpg"));
+          url("../img/about-mobile-2x.webp") type("image/webp"),
+          url("../img/about-mobile-2x.jpg") type("image/jpg"));
       }
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 618px;
+    height: 280px;
+    right: 0;
+    top: -90px;
+    z-index: -1;
+    background-image: image-set(
+      url("../img/clouds/clouds-3-1x.webp") type("image/webp"),
+      url("../img/clouds/clouds-3-1x.png") type("image/png"));
+
+    @include retina {
+      background-image: image-set(
+        url("../img/clouds/clouds-3-2x.webp") type("image/webp"),
+        url("../img/clouds/clouds-3-2x.png") type("image/png"));
+    }
+
+    @include vp-1199 {
+      display: none;
     }
   }
 

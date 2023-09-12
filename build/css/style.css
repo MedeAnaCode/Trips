@@ -3960,11 +3960,13 @@ button,
   left: 0;
   bottom: -69;
   z-index: -1;
-  background-image: url("../img/clouds/clouds-2-1x.png");
+  background-image: -webkit-image-set(url("../img/clouds/clouds-2-1x.webp") type("image/webp"), url("../img/clouds/clouds-2-1x.png") type("image/png"));
+  background-image: image-set(url("../img/clouds/clouds-2-1x.webp") type("image/webp"), url("../img/clouds/clouds-2-1x.png") type("image/png"));
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .tours::before {
-    background-image: url("../img/clouds/clouds-2-2x.png");
+    background-image: -webkit-image-set(url("../img/clouds/clouds-2-2x.webp") type("image/webp"), url("../img/clouds/clouds-2-2x.png") type("image/png"));
+    background-image: image-set(url("../img/clouds/clouds-2-2x.webp") type("image/webp"), url("../img/clouds/clouds-2-2x.png") type("image/png"));
   }
 }
 @media (max-width: 1199px) {
@@ -3982,11 +3984,13 @@ button,
   right: 0;
   top: -19px;
   z-index: -1;
-  background-image: url("../img/clouds/clouds-1-desktop-1x.png");
+  background-image: -webkit-image-set(url("../img/clouds/clouds-1-desktop-1x.webp") type("image/webp"), url("../img/clouds/clouds-1-desktop-1x.png") type("image/png"));
+  background-image: image-set(url("../img/clouds/clouds-1-desktop-1x.webp") type("image/webp"), url("../img/clouds/clouds-1-desktop-1x.png") type("image/png"));
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .tours::after {
-    background-image: url("../img/clouds/clouds-1-desktop-2x.png");
+    background-image: -webkit-image-set(url("../img/clouds/clouds-1-desktop-2x.webp") type("image/webp"), url("../img/clouds/clouds-1-desktop-2x.png") type("image/png"));
+    background-image: image-set(url("../img/clouds/clouds-1-desktop-2x.webp") type("image/webp"), url("../img/clouds/clouds-1-desktop-2x.png") type("image/png"));
   }
 }
 @media (max-width: 1199px) {
@@ -3994,12 +3998,14 @@ button,
     top: -93px;
     width: 294px;
     height: 1364px;
-    background-image: url("../img/clouds/clouds-1-tablet-1x.png");
+    background-image: -webkit-image-set(url("../img/clouds/clouds-1-tablet-1x.webp") type("image/webp"), url("../img/clouds/clouds-1-tablet-1x.png") type("image/png"));
+    background-image: image-set(url("../img/clouds/clouds-1-tablet-1x.webp") type("image/webp"), url("../img/clouds/clouds-1-tablet-1x.png") type("image/png"));
   }
 }
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (min-resolution: 2dppx) {
   .tours::after {
-    background-image: url("../img/clouds/clouds-1-tablet-2x.png");
+    background-image: -webkit-image-set(url("../img/clouds/clouds-1-tablet-2x.webp") type("image/webp"), url("../img/clouds/clouds-1-tablet-2x.png") type("image/png"));
+    background-image: image-set(url("../img/clouds/clouds-1-tablet-2x.webp") type("image/webp"), url("../img/clouds/clouds-1-tablet-2x.png") type("image/png"));
   }
 }
 @media (max-width: 767px) {
@@ -4007,12 +4013,14 @@ button,
     top: 137px;
     width: 176px;
     height: 595px;
-    background-image: url("../img/clouds/clouds-1-mobile-1x.png");
+    background-image: -webkit-image-set(url("../img/clouds/clouds-1-mobile-1x.webp") type("image/webp"), url("../img/clouds/clouds-1-mobile-1x.png") type("image/png"));
+    background-image: image-set(url("../img/clouds/clouds-1-mobile-1x.webp") type("image/webp"), url("../img/clouds/clouds-1-mobile-1x.png") type("image/png"));
   }
 }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
   .tours::after {
-    background-image: url("../img/clouds/clouds-1-mobile-2x.png");
+    background-image: -webkit-image-set(url("../img/clouds/clouds-1-mobile-2x.webp") type("image/webp"), url("../img/clouds/clouds-1-mobile-2x.png") type("image/png"));
+    background-image: image-set(url("../img/clouds/clouds-1-mobile-2x.webp") type("image/webp"), url("../img/clouds/clouds-1-mobile-2x.png") type("image/png"));
   }
 }
 
@@ -5091,6 +5099,30 @@ button,
     background-image: image-set(url("../img/about-mobile-2x.webp") type("image/webp"), url("../img/about-mobile-2x.jpg") type("image/jpg"));
   }
 }
+.about::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 618px;
+  height: 280px;
+  right: 0;
+  top: -90px;
+  z-index: -1;
+  background-image: -webkit-image-set(url("../img/clouds/clouds-3-1x.webp") type("image/webp"), url("../img/clouds/clouds-3-1x.png") type("image/png"));
+  background-image: image-set(url("../img/clouds/clouds-3-1x.webp") type("image/webp"), url("../img/clouds/clouds-3-1x.png") type("image/png"));
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .about::after {
+    background-image: -webkit-image-set(url("../img/clouds/clouds-3-2x.webp") type("image/webp"), url("../img/clouds/clouds-3-2x.png") type("image/png"));
+    background-image: image-set(url("../img/clouds/clouds-3-2x.webp") type("image/webp"), url("../img/clouds/clouds-3-2x.png") type("image/png"));
+  }
+}
+@media (max-width: 1199px) {
+  .about::after {
+    display: none;
+  }
+}
 .about h3 {
   font-size: 21px;
   font-weight: 700;
@@ -5455,11 +5487,13 @@ button,
   left: 0;
   top: -170px;
   z-index: -1;
-  background-image: url("../img/clouds/clouds-5-1x.png");
+  background-image: -webkit-image-set(url("../img/clouds/clouds-5-1x.webp") type("image/webp"), url("../img/clouds/clouds-5-1x.png") type("image/png"));
+  background-image: image-set(url("../img/clouds/clouds-5-1x.webp") type("image/webp"), url("../img/clouds/clouds-5-1x.png") type("image/png"));
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .advantages::before {
-    background-image: url("../img/clouds/clouds-5-2x.png");
+    background-image: -webkit-image-set(url("../img/clouds/clouds-5-2x.webp") type("image/webp"), url("../img/clouds/clouds-5-2x.png") type("image/png"));
+    background-image: image-set(url("../img/clouds/clouds-5-2x.webp") type("image/webp"), url("../img/clouds/clouds-5-2x.png") type("image/png"));
   }
 }
 @media (max-width: 1199px) {
@@ -5477,11 +5511,13 @@ button,
   right: 0;
   top: 10px;
   z-index: -1;
-  background-image: url("../img/clouds/clouds-4-1x.png");
+  background-image: -webkit-image-set(url("../img/clouds/clouds-4-1x.webp") type("image/webp"), url("../img/clouds/clouds-4-1x.png") type("image/png"));
+  background-image: image-set(url("../img/clouds/clouds-4-1x.webp") type("image/webp"), url("../img/clouds/clouds-4-1x.png") type("image/png"));
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .advantages::after {
-    background-image: url("../img/clouds/clouds-4-2x.png");
+    background-image: -webkit-image-set(url("../img/clouds/clouds-4-2x.webp") type("image/webp"), url("../img/clouds/clouds-4-2x.png") type("image/png"));
+    background-image: image-set(url("../img/clouds/clouds-4-2x.webp") type("image/webp"), url("../img/clouds/clouds-4-2x.png") type("image/png"));
   }
 }
 @media (max-width: 1199px) {
