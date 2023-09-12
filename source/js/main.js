@@ -10,7 +10,7 @@ import {initGallerySwiper} from './modules/gallery-swiper.js';
 import {initMenu} from './modules/menu.js';
 import {playVideo} from './modules/video-play.js';
 import {playAudio} from './modules/audio-play.js';
-import {initMap, setWindowResize} from "./modules/map.js";
+import {initMap, setWindowResize} from './modules/map.js';
 
 // ---------------------------------
 

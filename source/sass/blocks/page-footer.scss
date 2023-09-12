@@ -20,10 +20,6 @@
   flex-direction: column;
   align-items: center;
 
-  @include vp-1199 {
-
-  }
-
   @include vp-767 {
     align-items: flex-start;
     padding-left: 20px;
@@ -54,10 +50,6 @@
 .page-footer__logo {
   flex: none;
   color: inherit;
-
-  @include vp-767 {
-
-  }
 
   svg {
     width: 205px;

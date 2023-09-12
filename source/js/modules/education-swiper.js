@@ -1,5 +1,5 @@
-function initEducationSwiper() {
-  let swiper3 = new Swiper('.education__slider', {
+const initEducationSwiper = () => {
+  new Swiper('.education__slider', {
     loop: false,
     navigation: {
       prevEl: '.education__button-prev',
@@ -24,6 +24,6 @@ function initEducationSwiper() {
       },
     },
   });
-}
+};
 
 export {initEducationSwiper};

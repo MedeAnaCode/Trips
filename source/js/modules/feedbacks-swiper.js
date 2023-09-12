@@ -1,5 +1,5 @@
 const initFeedbacksSwiper = () => {
-  let swiper4 = new Swiper('.feedbacks__slider', {
+  new Swiper('.feedbacks__slider', {
     loop: false,
     navigation: {
       nextEl: '.feedbacks__button-next',

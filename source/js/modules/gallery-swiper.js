@@ -1,5 +1,5 @@
 const initGallerySwiper = () => {
-  let swiper6 = new Swiper('.gallery__slider', {
+  new Swiper('.gallery__slider', {
     slidesPerView: 'auto',
     navigation: {
       nextEl: '.gallery__button-next',

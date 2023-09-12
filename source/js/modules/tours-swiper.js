@@ -1,5 +1,5 @@
-function initToursSwiper() {
-  let swiper2 = new Swiper('.tours__slider', {
+const initToursSwiper = () => {
+  new Swiper('.tours__slider', {
     loop: false,
     navigation: {
       nextEl: '.tours__button-next',
@@ -23,6 +23,6 @@ function initToursSwiper() {
       },
     },
   });
-}
+};
 
 export {initToursSwiper};

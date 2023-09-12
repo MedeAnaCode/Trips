@@ -1,5 +1,5 @@
-function initHeroSwiper() {
-  let swiper1 = new Swiper('.hero-block__slider', {
+const initHeroSwiper = () => {
+  new Swiper('.hero-block__slider', {
     loop: true,
     pagination: {
       el: '.hero-block__pagination',
@@ -15,6 +15,6 @@ function initHeroSwiper() {
     longSwipes: true,
     longSwipesMs: 300,
   });
-}
+};
 
 export {initHeroSwiper};

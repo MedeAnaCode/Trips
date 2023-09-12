@@ -1,11 +1,11 @@
 const sliderAdvantages = document.querySelector('.advantages__slider');
 const buttonNext = document.querySelector('.advantages__button-next');
 const buttonPrev = document.querySelector('.advantages__button-prev');
-let swiper5;
+let swiper;
 
 const initAdvantagesSwiper = () => {
   if (sliderAdvantages && window.innerWidth > 1199) {
-    swiper5 = new Swiper(sliderAdvantages, {
+    swiper = new Swiper(sliderAdvantages, {
       loop: true,
       slidesPerView: 3,
       spaceBetween: 30,
@@ -25,10 +25,10 @@ const initAdvantagesSwiper = () => {
 };
 
 const destroySwiper = () => {
-  if (window.innerWidth <= 1199 && swiper5 && swiper5.initialized) {
-    swiper5.destroy();
+  if (window.innerWidth <= 1199 && swiper && swiper.initialized) {
+    swiper.destroy();
     document.querySelector('.advantages__slider').style.display = 'block';
-  } else if (!swiper5) {
+  } else if (!swiper) {
     initAdvantagesSwiper();
   }
 };

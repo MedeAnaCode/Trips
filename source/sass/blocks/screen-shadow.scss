@@ -1,0 +1,12 @@
+.screen-shadow {
+  display: none;
+
+  &.is-opened {
+    display: block;
+    position: fixed;
+    z-index: 2;
+    background-color: #000000;
+    opacity: 0.5;
+    inset: 0;
+  }
+}
