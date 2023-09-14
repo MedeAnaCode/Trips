@@ -5423,12 +5423,6 @@ button,
 .ask__validator.is-invalid input {
   border-color: #ff121f;
 }
-.ask__validator.is-invalid span {
-  word-break: break-word;
-  color: #ff121f;
-  font-size: 14px;
-  line-height: 22px;
-}
 
 .contacts {
   display: -webkit-box;

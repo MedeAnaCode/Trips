@@ -170,8 +170,6 @@
               <div class="hero-block__media-content">
                 <div class="hero-block__cards">
                   <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/hero-block/cards-mobile-1x.webp 1x, img/hero-block/cards-mobile-2x.webp 2x">
-                    <source media="(max-width: 767px)" srcset="img/hero-block/cards-mobile-1x.png 1x, img/hero-block/cards-mobile-2x.png 2x">
                     <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero-block/cards-tablet-1x.webp 1x, img/hero-block/cards-tablet-2x.webp 2x">
                     <source media="(max-width: 1199px)" srcset="img/hero-block/cards-tablet-1x.png 1x, img/hero-block/cards-tablet-2x.png 2x">
                     <source type="image/webp" srcset="img/hero-block/cards-desktop-1x.webp 1x, img/hero-block/cards-desktop-2x.webp 2x">
@@ -1375,13 +1373,13 @@
             <label class="visually-hidden" for="name">
               Имя.
             </label>
-            <div class="ask__validator" data-required="data-required" data-validate-type="text" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля">
+            <div class="ask__validator" data-required="data-required" data-validate-type="text">
               <input type="text" name="name" id="name" placeholder="Как к вам обращаться?" required>
             </div>
             <label class="visually-hidden" for="phone">
               Телефон.
             </label>
-            <div class="ask__validator" data-required="data-required" data-validate-type="phone" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля">
+            <div class="ask__validator" data-required="data-required" data-validate-type="phone">
               <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
             </div>
             <button class="button" type="submit">
