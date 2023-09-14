@@ -4,6 +4,10 @@
   color: $color-default-white;
   background-color: $color-navy-blue;
 
+  @include vp-767 {
+    min-height: 412px;
+  }
+
   picture {
     position: relative;
     z-index: 1;

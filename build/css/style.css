@@ -2683,6 +2683,16 @@ button,
   height: auto;
   position: relative;
 }
+@media (max-width: 1199px) {
+  .hero-block__slide {
+    min-height: 1086px;
+  }
+}
+@media (max-width: 767px) {
+  .hero-block__slide {
+    min-height: 632px;
+  }
+}
 .hero-block__slide::after {
   content: "";
   width: 100%;
@@ -3469,6 +3479,11 @@ button,
   height: auto;
   color: #ffffff;
   background-color: #0266c1;
+}
+@media (max-width: 767px) {
+  .tour-card {
+    min-height: 412px;
+  }
 }
 .tour-card picture {
   position: relative;
