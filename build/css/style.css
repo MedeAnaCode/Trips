@@ -2207,7 +2207,7 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 120px;
 }
@@ -4620,6 +4620,8 @@ button,
 }
 
 .feedback-card__avatar {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   -ms-flex-preferred-size: content;
       flex-basis: content;
   min-width: 258px;
@@ -4644,13 +4646,13 @@ button,
   }
 }
 .feedback-card__avatar picture {
-  height: 100%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
 @media (max-width: 767px) {
   .feedback-card__avatar picture {
-    width: 100%;
+    width: auto;
     height: auto;
     -o-object-fit: cover;
        object-fit: cover;
@@ -5083,7 +5085,7 @@ button,
 }
 
 .gallery__slider {
-  max-width: 1920px;
+  max-width: 1440px;
 }
 @media (min-width: 768px) and (max-width: 1439px) {
   .gallery__slider {
