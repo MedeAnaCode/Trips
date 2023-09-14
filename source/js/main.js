@@ -1,5 +1,4 @@
 import {iosVhFix} from './utils/ios-vh-fix.js';
-import {initModals} from './modules/modals/init-modals.js';
 import {Form} from './modules/form-validate/form.js';
 import {initHeroSwiper} from './modules/hero-swiper.js';
 import {initToursSwiper} from './modules/tours-swiper.js';
