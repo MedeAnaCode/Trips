@@ -19,6 +19,10 @@ const initToursSwiper = () => {
       },
       1200: {
         slidesPerView: 3,
+        spaceBetween: 10,
+      },
+      1280: {
+        slidesPerView: 3,
         spaceBetween: 30,
       },
     },
