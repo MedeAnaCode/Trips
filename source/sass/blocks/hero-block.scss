@@ -145,6 +145,11 @@
           url("../img/hero-block/background-3-mobile-1x.jpg") type("image/jpg") 1x);
     }
   }
+
+  button,
+  a {
+    display: none;
+  }
 }
 
 .hero-block__slide-container {
@@ -195,7 +200,6 @@
 }
 
 .hero-block__pagination-bullet {
-  display: block;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -211,6 +215,8 @@
   &--active {
     background-color: $color-default-white;
   }
+
+  display: none;
 }
 
 .hero-block__text-content {
@@ -461,5 +467,16 @@
 
   @include vp-1199 {
     margin-top: 19px;
+  }
+}
+
+.hero-block__slide.swiper-slide-active {
+  button,
+  a {
+    display: block;
+  }
+
+  .hero-block__pagination-bullet {
+    display: block;
   }
 }

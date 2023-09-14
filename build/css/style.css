@@ -2757,6 +2757,10 @@ button,
     background-image: image-set(url("../img/hero-block/background-3-mobile-2x.webp") type("image/webp") 2x, url("../img/hero-block/background-3-mobile-1x.webp") type("image/webp") 1x, url("../img/hero-block/background-3-mobile-2x.jpg") type("image/jpg") 2x, url("../img/hero-block/background-3-mobile-1x.jpg") type("image/jpg") 1x);
   }
 }
+.hero-block__slide button,
+.hero-block__slide a {
+  display: none;
+}
 
 .hero-block__slide-container {
   padding-top: 245px;
@@ -2829,13 +2833,13 @@ button,
 }
 
 .hero-block__pagination-bullet {
-  display: block;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   border: 1px solid #ffffff;
   background-color: transparent;
   cursor: pointer;
+  display: none;
 }
 @media (max-width: 767px) {
   .hero-block__pagination-bullet {
@@ -3096,6 +3100,14 @@ button,
   .hero-block__audio-player {
     margin-top: 19px;
   }
+}
+
+.hero-block__slide.swiper-slide-active button,
+.hero-block__slide.swiper-slide-active a {
+  display: block;
+}
+.hero-block__slide.swiper-slide-active .hero-block__pagination-bullet {
+  display: block;
 }
 
 .audio-card {
